@@ -1,0 +1,26 @@
+{
+    "name": "slrondonm/woocommerce-memberships-print-card",
+    "description": "Its Short description",
+    "type": "wordpress-plugins",
+    "license": "GNU General Public License v3",
+    "authors": [
+        {
+            "name": "Ing. Sergio Rondón",
+            "email": "sl.rondon.m@gmail.com",
+            "homepage": "https://github.com/slrondonm",
+            "role": "developer"
+        },
+        {
+            "name": "Grupo Virtualizate",
+            "email": "soporte@virtualizate.com.co",
+            "homepage": "https://virtualizate.com.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WMPC\\": "includes/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
