@@ -24,6 +24,19 @@ class WMPC
         
     }
 
+    public function render_memberships_card($user_id)
+    {
+        
+    }
+
+
+    public function get_options()
+    {
+        $options = get_option('wmpc_optios', array());
+
+        
+    }
+
     public static function run()
     {
         return self::$wmpc;
