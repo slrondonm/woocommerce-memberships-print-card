@@ -18,7 +18,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "WMPC\\": "includes/"
+            "WMPC\\": "includes/",
+            "WMPC\\Libs\\": "libs/"
+
         }
     },
     "minimum-stability": "dev",

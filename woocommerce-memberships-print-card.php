@@ -30,12 +30,14 @@ if (!defined('ABSPATH')) {
 /**
  * Define statics options for core plugin
  */
+define('DS', DIRECTORY_SEPARATOR);
 define('WMPC_VERSION', '0.1.0');
 define('WMPC_SLUG', 'woocommerce-memberships-print-card');
 define('WMPC_CAPABILITY', 'manage_options');
 define('WMPC_PREFIX', 'wpmc');
-define('WMPC_URL', plugin_dir_url(__FILE__));
-define('WMPC_PATH', plugin_dir_path(__FILE__));
+define('WMPC_URL', untrailingslashit(plugin_dir_url(__FILE__)));
+define('WMPC_PATH', untrailingslashit(plugin_dir_path(__FILE__)));
+define('WMPC_SCRIPTS_URL', WMPC_URL . DS . 'assets' );
 
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
     require( __DIR__ . '/vendor/autoload.php' );
